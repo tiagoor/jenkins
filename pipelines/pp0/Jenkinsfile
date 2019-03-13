@@ -10,9 +10,9 @@ pipeline {
         stage ('--- testar ---') {
             steps {
                 sh "echo 'Teste $date' >> teste.tx"
-                sh "echo 'teste 0'"
-                sh "echo 'teste 1'"
-                sh "echo 'teste 2'"
+                //sh "echo 'teste 0'"
+                //sh "echo 'teste 1'"
+                //sh "echo 'teste 2'"
             }
         }
         
