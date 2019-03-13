@@ -6,7 +6,6 @@ pipeline {
                 sh "echo 'mvn clean'"
             }
         }
-
         stage ('--- testar ---') {
             steps {
                 //sh "echo 'Teste $date' >> teste.tx"
@@ -15,12 +14,15 @@ pipeline {
                 //sh "echo 'teste 2'"
             }
         }
-        
         stage ('--- empacotar ---') {
             steps {
                 sh "echo 'pacote'"
             }
         }
-        
+        stage ('--- finalizar ---') {
+            steps {
+                sh "echo 'final'"
+            }
+        }        
     }
 }
