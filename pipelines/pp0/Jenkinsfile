@@ -1,8 +1,10 @@
 pipeline {
     agent any
-    stages('--- limpar ---') {
-        steps {
-            sh "echo 'mvn clean'"
+    stages {
+        stage ('--- limpar ---') {
+            steps {
+                sh "echo 'mvn clean'"
+            }
+        }
     }
-  }
 }
